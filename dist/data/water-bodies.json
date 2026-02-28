@@ -1,0 +1,259 @@
+[
+  {
+    "id": "deschutes-river",
+    "name": "Deschutes River",
+    "type": "river",
+    "sections": ["Upper", "Middle", "Lower"],
+    "description": "The Deschutes River is a premier blue ribbon trout fishery in Central Oregon. This large tailwater river flows through high desert country and is famous for its native redband rainbow trout and brown trout.",
+    "species": ["rainbow-trout", "brown-trout", "whitefish"],
+    "accessPoints": [
+      {
+        "name": "Heritage Landing",
+        "description": "At Columbia River confluence, popular for steelhead",
+        "type": "bank"
+      },
+      {
+        "name": "Trout Creek",
+        "description": "9 miles below Pelton Dam, excellent wade fishing",
+        "type": "bank"
+      },
+      {
+        "name": "Maupin Area",
+        "description": "Multiple access points around Maupin",
+        "type": "bank"
+      },
+      {
+        "name": "Benham Falls",
+        "description": "Scenic falls area with good fishing",
+        "type": "trailhead"
+      },
+      {
+        "name": "Dillon Falls",
+        "description": "Popular Bend-area fishing spot",
+        "type": "trailhead"
+      },
+      {
+        "name": "Lava Island Falls",
+        "description": "Beautiful canyon fishing",
+        "type": "trailhead"
+      }
+    ],
+    "regulations": "No fishing from floating devices on the Deschutes River - wade fishing only. Always check ODFW regulations for current catch limits and seasons.",
+    "bestSeasons": ["May", "June", "July", "August"],
+    "techniques": ["fly-fishing", "lure", "bait"]
+  },
+  {
+    "id": "crane-prairie-reservoir",
+    "name": "Crane Prairie Reservoir",
+    "type": "reservoir",
+    "description": "Known as the 'Cascade Lake of the West,' Crane Prairie is famous for its large rainbow trout and excellent bass fishing. The reservoir has numerous channels and shallow areas.",
+    "species": ["rainbow-trout", "largemouth-bass", "smallmouth-bass", "kokanee"],
+    "accessPoints": [
+      {
+        "name": "Rocky Point Boat Ramp",
+        "description": "Main boat launch with good parking",
+        "type": "boat_ramp"
+      },
+      {
+        "name": "Crane Prairie Resort",
+        "description": "Full-service resort with boat rentals",
+        "type": "boat_ramp"
+      },
+      {
+        "name": "Cold Water Cove",
+        "description": "Campground with bank fishing access",
+        "type": "bank"
+      },
+      {
+        "name": "Chimney Rock",
+        "description": "Popular bank fishing area",
+        "type": "bank"
+      }
+    ],
+    "regulations": "Standard Oregon fishing regulations apply. Boat fishing allowed. Check ODFW for trout size limits.",
+    "bestSeasons": ["May", "June", "July", "August", "September"],
+    "techniques": ["fly-fishing", "lure", "bait", "trolling"]
+  },
+  {
+    "id": "wickiup-reservoir",
+    "name": "Wickiup Reservoir",
+    "type": "reservoir",
+    "description": "Wickiup is the largest reservoir in the Cascade Lakes chain, known for excellent kokanee fishing and large brown trout. The reservoir has extensive shorelines and numerous bays.",
+    "species": ["kokanee", "brown-trout", "rainbow-trout", "smallmouth-bass"],
+    "accessPoints": [
+      {
+        "name": "North Wickiup Boat Ramp",
+        "description": "Primary boat launch on north end",
+        "type": "boat_ramp"
+      },
+      {
+        "name": "Gorda Point Boat Ramp",
+        "description": "Southern boat launch",
+        "type": "boat_ramp"
+      },
+      {
+        "name": "Wickiup Campground",
+        "description": "Shore fishing near campground",
+        "type": "bank"
+      }
+    ],
+    "regulations": "Kokanee limit is 5 per day. Check ODFW for current regulations on trout limits.",
+    "bestSeasons": ["May", "June", "July", "August", "September"],
+    "techniques": ["lure", "trolling", "bait"]
+  },
+  {
+    "id": "metolius-river",
+    "name": "Metolius River",
+    "type": "river",
+    "description": "One of Oregon's most beautiful spring creeks, the Metolius flows crystal clear from underground springs. It's a challenging but rewarding fishery with native rainbow trout and bull trout.",
+    "species": ["rainbow-trout", "bull-trout", "whitefish"],
+    "accessPoints": [
+      {
+        "name": "Camp Sherman",
+        "description": "Multiple access points near Camp Sherman store",
+        "type": "bank"
+      },
+      {
+        "name": "Lower Bridge",
+        "description": "Popular fishing area downstream",
+        "type": "bank"
+      },
+      {
+        "name": "Allingham Bridge",
+        "description": "Good access with parking",
+        "type": "bank"
+      }
+    ],
+    "regulations": "Bull trout are protected - catch and release only. Fly fishing only in some sections. Check ODFW regulations for specific section rules.",
+    "bestSeasons": ["April", "May", "June", "October"],
+    "techniques": ["fly-fishing"]
+  },
+  {
+    "id": "crooked-river",
+    "name": "Crooked River",
+    "type": "river",
+    "description": "The Crooked River below Bowman Dam is a excellent tailwater fishery with abundant redband rainbow trout and mountain whitefish. The river canyon provides spectacular scenery.",
+    "species": ["rainbow-trout", "whitefish"],
+    "accessPoints": [
+      {
+        "name": "Bowman Dam",
+        "description": "Below the dam, excellent fishing access",
+        "type": "bank"
+      },
+      {
+        "name": "Crooked River Campground",
+        "description": "Multiple access points from campground",
+        "type": "bank"
+      },
+      {
+        "name": "Chimney Rock",
+        "description": "Scenic canyon fishing",
+        "type": "bank"
+      },
+      {
+        "name": "Prineville Reservoir",
+        "description": "Lower river access near reservoir",
+        "type": "bank"
+      }
+    ],
+    "regulations": "Trout limit is 5 per day, with only 1 over 20 inches. Artificial flies and lures only in some sections. Check ODFW regulations.",
+    "bestSeasons": ["April", "May", "June", "September", "October"],
+    "techniques": ["fly-fishing", "lure"]
+  },
+  {
+    "id": "cascade-lakes",
+    "name": "Cascade Lakes",
+    "type": "lake",
+    "description": "The Cascade Lakes Highway provides access to numerous high mountain lakes, each with unique fishing opportunities. From trophy trout to kokanee, there's something for every angler.",
+    "species": ["rainbow-trout", "brown-trout", "brook-trout", "cutthroat-trout", "kokanee"],
+    "accessPoints": [
+      {
+        "name": "Elk Lake",
+        "description": "Easy access via Cascade Lakes Highway",
+        "type": "boat_ramp"
+      },
+      {
+        "name": "Hosmer Lake",
+        "description": "Fly fishing only, Atlantic salmon",
+        "type": "boat_ramp"
+      },
+      {
+        "name": "Sparks Lake",
+        "description": "Scenic high lake with good trout fishing",
+        "type": "boat_ramp"
+      },
+      {
+        "name": "Lava Lake",
+        "description": "Popular family fishing lake",
+        "type": "boat_ramp"
+      },
+      {
+        "name": "North Twin Lake",
+        "description": "Excellent largemouth bass fishing",
+        "type": "bank"
+      },
+      {
+        "name": "South Twin Lake",
+        "description": "Rainbow trout and bass",
+        "type": "bank"
+      },
+      {
+        "name": "Devils Lake",
+        "description": "High elevation brook trout",
+        "type": "bank"
+      }
+    ],
+    "regulations": "Regulations vary by lake. Hosmer Lake is fly fishing only. Check ODFW for lake-specific regulations.",
+    "bestSeasons": ["June", "July", "August", "September"],
+    "techniques": ["fly-fishing", "lure", "bait", "trolling"]
+  },
+  {
+    "id": "fall-river",
+    "name": "Fall River",
+    "type": "river",
+    "description": "A pristine spring creek that flows into the Deschutes River. Fall River is known for its crystal-clear water and selective rainbow trout. Excellent dry fly fishing.",
+    "species": ["rainbow-trout", "brown-trout"],
+    "accessPoints": [
+      {
+        "name": "Fall River Campground",
+        "description": "Multiple access points along campground",
+        "type": "bank"
+      },
+      {
+        "name": "Fishermen's Access",
+        "description": "Public access near river headwaters",
+        "type": "bank"
+      },
+      {
+        "name": "Fall River Falls",
+        "description": "Scenic area below falls",
+        "type": "trailhead"
+      }
+    ],
+    "regulations": "Fly fishing only. Catch and release encouraged. Check ODFW for current regulations.",
+    "bestSeasons": ["May", "June", "July", "August", "September"],
+    "techniques": ["fly-fishing"]
+  },
+  {
+    "id": "tumalo-creek",
+    "name": "Tumalo Creek",
+    "type": "creek",
+    "description": "A beautiful mountain creek near Bend with native rainbow trout and brook trout in its upper reaches. Best fished in spring and early summer.",
+    "species": ["rainbow-trout", "brook-trout"],
+    "accessPoints": [
+      {
+        "name": "Shevlin Park",
+        "description": "Easy access in Bend city limits",
+        "type": "trailhead"
+      },
+      {
+        "name": "Tumalo Falls",
+        "description": "Hiking access above falls",
+        "type": "trailhead"
+      }
+    ],
+    "regulations": "Check ODFW for creek-specific regulations. Some sections may be closed to protect spawning fish.",
+    "bestSeasons": ["April", "May", "June"],
+    "techniques": ["fly-fishing", "lure"]
+  }
+]

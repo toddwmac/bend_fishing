@@ -1,0 +1,86 @@
+[
+  {
+    "month": "January",
+    "species": ["whitefish"],
+    "description": "Winter fishing is slow but whitefish can be caught nymphing deep pools. Check regulations as some waters close.",
+    "hatches": ["Midges"],
+    "waterConditions": "Cold, low water. Ice possible in mornings."
+  },
+  {
+    "month": "February",
+    "species": ["whitefish", "rainbow-trout"],
+    "description": "Late winter can provide decent fishing on warmer days. Focus on midday hours when fish are most active.",
+    "hatches": ["Midges", "Blue Winged Olive"],
+    "waterConditions": "Cold, beginning to warm slightly."
+  },
+  {
+    "month": "March",
+    "species": ["rainbow-trout", "whitefish", "brown-trout"],
+    "description": "Spring begins to show. Fish become more active. Good nymphing opportunities before the main hatches begin.",
+    "hatches": ["Blue Winged Olive", "Midges"],
+    "waterConditions": "Warming, may have higher flows from rain/snow melt."
+  },
+  {
+    "month": "April",
+    "species": ["rainbow-trout", "brown-trout", "cutthroat-trout", "whitefish"],
+    "description": "Excellent fishing as waters stabilize and hatches begin. Dry fly fishing improves. Bull trout season opens in some waters.",
+    "hatches": ["Blue Winged Olive", "March Brown", "Caddis"],
+    "waterConditions": "Flows stabilizing, water clearing."
+  },
+  {
+    "month": "May",
+    "species": ["rainbow-trout", "brown-trout", "cutthroat-trout", "whitefish", "kokanee"],
+    "description": "Prime season begins! Salmonfly hatch on the Deschutes. Excellent dry fly fishing. Reservoirs producing kokanee.",
+    "hatches": ["Salmonfly", "Golden Stonefly", "Caddis", "Blue Winged Olive"],
+    "waterConditions": "Good flows, may be some snow melt runoff."
+  },
+  {
+    "month": "June",
+    "species": ["rainbow-trout", "brown-trout", "cutthroat-trout", "brook-trout", "whitefish", "kokanee", "smallmouth-bass", "largemouth-bass"],
+    "description": "Peak trout fishing month! All techniques producing. Bass fishing heats up. High mountain lakes become accessible.",
+    "hatches": ["Pale Morning Dun", "Green Drake", "Caddis", "Stoneflies"],
+    "waterConditions": "Stable flows, clear water. Ideal conditions."
+  },
+  {
+    "month": "July",
+    "species": ["rainbow-trout", "brown-trout", "cutthroat-trout", "brook-trout", "whitefish", "kokanee", "smallmouth-bass", "largemouth-bass"],
+    "description": "Excellent fishing continues. Focus on morning and evening for best action. Terrestrial insect fishing begins.",
+    "hatches": ["Pale Morning Dun", "Caddis", "Terrestrials"],
+    "waterConditions": "Warm, lower flows. Fish seek cooler, deeper water."
+  },
+  {
+    "month": "August",
+    "species": ["rainbow-trout", "brown-trout", "cutthroat-trout", "brook-trout", "whitefish", "kokanee", "smallmouth-bass", "largemouth-bass", "steelhead"],
+    "description": "Summer steelhead begin entering the Lower Deschutes. Truscott fishing focuses on early/late. Bass fishing peaks.",
+    "hatches": ["Caddis", "Terrestrials", "Midges"],
+    "waterConditions": "Warm, low clear water. Fish early or late."
+  },
+  {
+    "month": "September",
+    "species": ["rainbow-trout", "brown-trout", "cutthroat-trout", "brook-trout", "whitefish", "kokanee", "smallmouth-bass", "largemouth-bass", "steelhead"],
+    "description": "Cooling temperatures improve fishing. Steelhead fishing picks up. Browns become more aggressive as spawning approaches.",
+    "hatches": ["Blue Winged Olive", "Caddis", "Terrestrials"],
+    "waterConditions": "Cooling, stable. Excellent fishing conditions."
+  },
+  {
+    "month": "October",
+    "species": ["rainbow-trout", "brown-trout", "cutthroat-trout", "brook-trout", "whitefish", "smallmouth-bass", "steelhead", "chinook-salmon"],
+    "description": "Excellent fall fishing. Steelhead runs peak. Brown trout spawning colors show. Fall Chinook enter the river.",
+    "hatches": ["Blue Winged Olive", "October Caddis", "Midges"],
+    "waterConditions": "Cool, stable. Some fall rains may raise flows."
+  },
+  {
+    "month": "November",
+    "species": ["rainbow-trout", "brown-trout", "whitefish", "steelhead", "chinook-salmon"],
+    "description": "Steelhead fishing continues to be good. Trout fishing slows but can still be productive. Fall Chinook run peaks.",
+    "hatches": ["Blue Winged Olive", "Midges"],
+    "waterConditions": "Cool, may have higher flows from rain."
+  },
+  {
+    "month": "December",
+    "species": ["rainbow-trout", "whitefish", "steelhead"],
+    "description": "Winter fishing begins. Steelhead still available. Check regulations as some waters close for the season.",
+    "hatches": ["Midges"],
+    "waterConditions": "Cold, low flows. Some waters may ice over."
+  }
+]

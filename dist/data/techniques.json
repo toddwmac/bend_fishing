@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fly-fishing",
+    "name": "Fly Fishing",
+    "description": "Fly fishing is the most popular technique for Bend area trout. The clear waters and abundant insect hatches make Central Oregon a world-class fly fishing destination.",
+    "gear": ["Fly rod (4-6 weight for trout)", "Fly reel", "Fly line (weight forward)", "Leaders (9-12ft)", "Tippet material", "Flies (dry, nymphs, streamers)", "Waders", "Wading boots", "Forceps", "Landing net", "Floatant", "Split shot"]
+  },
+  {
+    "id": "lure",
+    "name": "Lure Fishing",
+    "description": "Lure fishing is effective for trout, bass, and salmon. Spinners and spoons are particularly effective in the Deschutes River and reservoirs.",
+    "gear": ["Spinning rod (6-7ft medium action)", "Spinning reel", "Monofilament or fluorocarbon line (6-10lb)", "Spinners (Mepps, Panther Martin)", "Spoons (Kastmaster, Little Cleo)", "Crankbaits", "Swivels", "Split shot", "Landing net", "Pliers"]
+  },
+  {
+    "id": "bait",
+    "name": "Bait Fishing",
+    "description": "Bait fishing can be very effective, especially for stocked fish and in reservoirs. PowerBait, nightcrawlers, and salmon eggs are popular choices.",
+    "gear": ["Medium action spinning rod", "Spinning reel", "Monofilament line (6-8lb)", "Hooks (size 8-12)", "Weights/split shot", "Swivels", "PowerBait", "Nightcrawlers", "Salmon eggs", "Bait holder", "Landing net"]
+  },
+  {
+    "id": "trolling",
+    "name": "Trolling",
+    "description": "Trolling is the most effective technique for kokanee in reservoirs. It allows you to cover water and find actively feeding fish.",
+    "gear": ["Medium trolling rod", "Line counter reel", "Monofilament or lead core line", "Downrigger (optional)", "Trolling flies", "Spoons", "Spinners", "Flashers", "Snubbers", "Dodgers", "Fish finder", "Rod holders"]
+  },
+  {
+    "id": "nymphing",
+    "name": "Nymph Fishing",
+    "description": "Nymphing is the most consistent way to catch trout in Bend waters. Fish feed underwater on insect nymphs for 90% of their diet.",
+    "gear": ["Nymph rod (9-10ft, 3-5 weight)", "Fly reel", "Fly line", "Leaders and tippet", "Strike indicator", "Split shot", "Nymphs (Pheasant Tail, Hare's Ear, Prince)", "Forceps", "Landing net"]
+  },
+  {
+    "id": "dry-fly",
+    "name": "Dry Fly Fishing",
+    "description": "Dry fly fishing is the most exciting way to catch trout as you see the rise. Central Oregon has excellent hatches from May through October.",
+    "gear": ["Dry fly rod (9ft, 4-6 weight)", "Fly reel", "Floatant", "Dry flies (mayflies, caddis, stoneflies)", "Leaders (12ft, 5-6x)", "Tippet material", "Forceps", "Landing net", "Polarized sunglasses"]
+  }
+]
