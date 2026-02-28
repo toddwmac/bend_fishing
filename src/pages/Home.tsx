@@ -14,25 +14,25 @@ export default function Home() {
       </div>
 
       <div className="grid">
-        <Link to="/bend_fishing/water-bodies" className="card">
+        <Link to="/water-bodies" className="card">
           <div className="card-icon">🗺️</div>
           <h3>Water Bodies</h3>
           <p>Explore fishing locations including the Deschutes River, Cascade Lakes, and more.</p>
         </Link>
 
-        <Link to="/bend_fishing/species" className="card">
+        <Link to="/species" className="card">
           <div className="card-icon">🐟</div>
           <h3>Species Guide</h3>
           <p>Learn about trout, salmon, bass and other fish species found in Central Oregon.</p>
         </Link>
 
-        <Link to="/bend_fishing/seasons" className="card">
+        <Link to="/seasons" className="card">
           <div className="card-icon">📅</div>
           <h3>Seasonal Calendar</h3>
           <p>Find the best times to fish, insect hatches, and seasonal fishing patterns.</p>
         </Link>
 
-        <Link to="/bend_fishing/planner" className="card">
+        <Link to="/planner" className="card">
           <div className="card-icon">🎣</div>
           <h3>Trip Planner</h3>
           <p>Plan your fishing trip and save your favorite locations and species.</p>
