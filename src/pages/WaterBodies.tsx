@@ -16,6 +16,21 @@ export default function WaterBodies() {
     })
   }, [waterBodies, filter, search])
 
+  const getLinkIcon = (type: string) => {
+    const icons: Record<string, string> = {
+      regulations: '📋',
+      report: '📊',
+      map: '🗺️',
+      weather: '🌤️',
+      guide: '🎣'
+    }
+    return icons[type] || '🔗'
+  }
+
+  const getMapUrl = (bodyName: string) => {
+    return `https://www.google.com/maps/search?q=${encodeURIComponent(bodyName + ' Bend Oregon')}`
+  }
+
   if (loading) return <div className="loading">Loading...</div>
   if (error) return <div className="error">Error: {error}</div>
 
@@ -51,7 +66,20 @@ export default function WaterBodies() {
             <ul className="access-list">
               {selectedBody.accessPoints.map((ap, i) => (
                 <li key={i}>
-                  <strong>{ap.name}</strong> ({ap.type.replace('_', ' ')}) - {ap.description}
+                  <div className="access-point-content">
+                    <div>
+                      <strong>{ap.name}</strong> ({ap.type.replace('_', ' ')}) - {ap.description}
+                    </div>
+                    <a
+                      href={`https://www.google.com/maps/search?q=${encodeURIComponent(ap.name + ' ' + selectedBody.name)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="access-point-map"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      🗺️ View on Map
+                    </a>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -75,6 +103,27 @@ export default function WaterBodies() {
             <h3>⚠️ Regulations</h3>
             <p>{selectedBody.regulations}</p>
           </section>
+
+          {selectedBody.externalLinks && selectedBody.externalLinks.length > 0 && (
+            <section className="detail-section">
+              <h3>🔗 External Resources</h3>
+              <div className="external-links">
+                {selectedBody.externalLinks.map(link => (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`external-link external-link-${link.type}`}
+                  >
+                    <span className="link-icon">{getLinkIcon(link.type)}</span>
+                    <span className="link-name">{link.name}</span>
+                    <span className="link-arrow">→</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
       </div>
     )
@@ -102,13 +151,26 @@ export default function WaterBodies() {
 
       <div className="grid">
         {filteredBodies.map(body => (
-          <div key={body.id} className="card" onClick={() => setSelectedBody(body)}>
-            <h3>{body.name}</h3>
-            <span className="tag">{body.type}</span>
-            <p>{body.description}</p>
-            <div className="card-footer">
-              <span className="small-text">Species: {body.species.length}</span>
-              <span className="small-text">Access Points: {body.accessPoints.length}</span>
+          <div key={body.id} className="card">
+            <div onClick={() => setSelectedBody(body)}>
+              <h3>{body.name}</h3>
+              <span className="tag">{body.type}</span>
+              <p>{body.description}</p>
+              <div className="card-footer">
+                <span className="small-text">Species: {body.species.length}</span>
+                <span className="small-text">Access Points: {body.accessPoints.length}</span>
+              </div>
+            </div>
+            <div className="card-actions">
+              <a
+                href={getMapUrl(body.name)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-small btn-outline"
+                onClick={(e) => e.stopPropagation()}
+              >
+                🗺️ Map
+              </a>
             </div>
           </div>
         ))}
@@ -162,10 +224,98 @@ export default function WaterBodies() {
           border-bottom: 1px solid var(--color-border);
         }
 
+        .access-point-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .access-point-map {
+          padding: 0.25rem 0.75rem;
+          background: #f3f4f6;
+          border-radius: var(--radius);
+          text-decoration: none;
+          color: var(--color-primary);
+          font-size: 0.875rem;
+          white-space: nowrap;
+          transition: background 0.2s;
+        }
+
+        .access-point-map:hover {
+          background: #e5e7eb;
+        }
+
         .tags {
           display: flex;
           flex-wrap: wrap;
           gap: 0.5rem;
+        }
+
+        .external-links {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+
+        .external-link {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.75rem 1rem;
+          background: var(--color-surface);
+          border: 1px solid var(--color-border);
+          border-radius: var(--radius);
+          text-decoration: none;
+          color: var(--color-text);
+          transition: all 0.2s;
+        }
+
+        .external-link:hover {
+          background: var(--color-primary);
+          color: white;
+          transform: translateX(4px);
+        }
+
+        .external-link-regulations {
+          border-left: 3px solid #dc2626;
+        }
+
+        .external-link-report {
+          border-left: 3px solid #2563eb;
+        }
+
+        .external-link-map {
+          border-left: 3px solid #16a34a;
+        }
+
+        .external-link-weather {
+          border-left: 3px solid #0891b2;
+        }
+
+        .link-icon {
+          font-size: 1.25rem;
+        }
+
+        .link-name {
+          flex: 1;
+          font-weight: 500;
+        }
+
+        .link-arrow {
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+
+        .external-link:hover .link-arrow {
+          opacity: 1;
+        }
+
+        .card-actions {
+          display: flex;
+          gap: 0.5rem;
+          padding: 0.75rem;
+          border-top: 1px solid var(--color-border);
         }
 
         .card-footer {

@@ -1,9 +1,15 @@
-// Data type definitions for the Bend Fishing Guide application
+// Data type definitions for Bend Fishing Guide application
 
 export interface AccessPoint {
   name: string
   description: string
   type: 'boat_ramp' | 'bank' | 'trailhead'
+}
+
+export interface ExternalLink {
+  name: string
+  url: string
+  type: 'regulations' | 'report' | 'map' | 'weather' | 'guide'
 }
 
 export interface WaterBody {
@@ -14,6 +20,7 @@ export interface WaterBody {
   description: string
   species: string[]
   accessPoints: AccessPoint[]
+  externalLinks?: ExternalLink[]
   regulations: string
   bestSeasons: string[]
   techniques: string[]
