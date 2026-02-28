@@ -134,13 +134,12 @@ Before you begin, ensure you have the following installed:
 | `npm run dev` | Start development server |
 | `npm run build` | Build for production |
 | `npm run preview` | Preview production build locally |
-| `npm run deploy` | Deploy to GitHub Pages |
 
 ---
 
 ## Deployment to GitHub Pages
 
-This project is configured for one-command deployment to GitHub Pages.
+This project uses manual deployment to GitHub Pages via the GitHub web interface.
 
 ### Step 1: Create GitHub Repository
 
@@ -148,7 +147,7 @@ This project is configured for one-command deployment to GitHub Pages.
 2. **Do NOT** initialize with README (you already have one)
 3. Create the repository
 
-### Step 2: Push Your Code
+### Step 2: Push Your Source Code
 
 ```bash
 # Initialize git if not already done
@@ -170,25 +169,55 @@ git remote add origin https://github.com/YOUR-USERNAME/fish_agents.git
 git push -u origin main
 ```
 
-### Step 3: Configure GitHub Pages
+### Step 3: Build Your Project Locally
+
+```bash
+# Build the production bundle
+npm run build
+```
+
+This creates a `dist/` folder with your built application.
+
+### Step 4: Deploy to GitHub Pages (Manual)
+
+#### Initial Deployment
 
 1. Go to your repository on GitHub
 2. Click **Settings** → **Pages** (left sidebar)
 3. Under **Build and deployment** → **Source**, select **Deploy from a branch**
-4. Under **Branch**, select **gh-pages** and **/ (root)**
+4. Under **Branch**, select **main** and **/(root)**
 5. Click **Save**
 
-### Step 4: Deploy
+6. **Upload your built files to the repository root:**
+   - Go to your repository's **Code** tab
+   - Click the **Add file** → **Upload files** button
+   - Navigate to your local `dist/` folder
+   - **Upload all files from the dist folder** (including `index.html`, `assets/` folder, etc.)
+   - **IMPORTANT**: Upload these files directly to the repository root (the same level as package.json, src/, etc.)
+   - Scroll to the bottom and commit with message: "Deploy to GitHub Pages"
+
+7. Wait 1-2 minutes for GitHub to deploy
+8. Your site will be live at: `https://YOUR-USERNAME.github.io/fish_agents/`
+
+#### Updating Your Site
+
+After making changes:
 
 ```bash
-npm run deploy
+# 1. Commit and push source code
+git add .
+git commit -m "Your commit message"
+git push
+
+# 2. Rebuild the project
+npm run build
 ```
 
-This command will:
-- Build the production bundle
-- Create a `gh-pages` branch
-- Push the built files to GitHub
-- Make your site live at: `https://YOUR-USERNAME.github.io/fish_agents/`
+Then in GitHub web interface:
+1. Go to **Code** tab
+2. Click **Add file** → **Upload files**
+3. Upload all files from your local `dist/` folder to the repository root (this will overwrite previous files)
+4. Commit with message: "Update deployment"
 
 ### Troubleshooting Deployment
 
@@ -196,19 +225,17 @@ This command will:
 |-------|----------|
 | 404 Error | Wait 1-2 minutes for GitHub to deploy, or check Pages settings |
 | Blank Page | Verify `vite.config.ts` has correct `base: '/fish_agents/'` |
-| Styles Missing | Ensure all paths use the correct base path |
-| gh-pages branch not created | Run `npm install gh-pages` first |
+| Styles Missing | Ensure all files from `dist/` are uploaded, including the `assets/` folder |
+| Old version showing | Clear browser cache or try incognito mode |
 
-### Updating Your Site
+### Important Notes
 
-After making changes:
-
-```bash
-git add .
-git commit -m "Your commit message"
-git push
-npm run deploy
-```
+- Upload files to the **repository root** (same level as package.json, src/, public/, etc.)
+- Always upload **ALL files** from the `dist/` folder, including subdirectories
+- The `dist/` folder is created/overwritten each time you run `npm run build`
+- Do NOT edit files in the `dist/` folder - edit source files and rebuild
+- GitHub Pages serves from the root of your repository, not from a subdirectory
+- When uploading, you'll see existing files like package.json, src/, etc. - the new dist files will be added alongside them
 
 ---
 
