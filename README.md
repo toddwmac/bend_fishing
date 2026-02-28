@@ -9,7 +9,7 @@
 
 *A comprehensive fishing guide application for Bend, Oregon and the surrounding Central Oregon area*
 
-[Live Demo](https://[your-username].github.io/fish_agents/) • [Report Bug](../../issues) • [Request Feature](../../issues)
+[Live Demo](https://toddwmac.github.io/bend_fishing/) • [Report Bug](../../issues) • [Request Feature](../../issues)
 
 </div>
 
@@ -108,8 +108,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/fish_agents.git
-   cd fish_agents
+   git clone https://github.com/toddwmac/bend_fishing.git
+   cd bend_fishing
    ```
 
 2. **Install dependencies**
@@ -143,7 +143,7 @@ This project uses the `docs/` directory for GitHub Pages deployment.
 
 ### Step 1: Create GitHub Repository
 
-1. Go to [GitHub](https://github.com/) and create a new repository named `fish_agents`
+1. Go to [GitHub](https://github.com/) and create a new repository named `bend_fishing`
 2. **Do NOT** initialize with README (you already have one)
 3. Create the repository
 
@@ -163,7 +163,7 @@ git commit -m "Initial commit: Bend Fishing Guide"
 git branch -M main
 
 # Add remote repository
-git remote add origin https://github.com/YOUR-USERNAME/fish_agents.git
+git remote add origin https://github.com/toddwmac/bend_fishing.git
 
 # Push to GitHub
 git push -u origin main
@@ -198,7 +198,7 @@ After building your project:
    ```
 
 2. Wait 1-2 minutes for GitHub to deploy
-3. Your site will be live at: `https://YOUR-USERNAME.github.io/fish_agents/`
+3. Your site will be live at: `https://toddwmac.github.io/bend_fishing/`
 
 ### Updating Your Site
 
@@ -274,7 +274,7 @@ git push
 ## Project Structure
 
 ```
-fish_agents/
+bend_fishing/
 ├── 📁 public/
 │   └── 📁 data/                    # Static JSON data files
 │       ├── water-bodies.json       # 8 water bodies with details

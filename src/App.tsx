@@ -7,7 +7,7 @@ import Planner from './pages/Planner'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/bend_fishing">
       <div className="app">
         <header className="app-header">
           <h1>🐟 Bend Fishing Guide</h1>
