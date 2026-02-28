@@ -13,10 +13,10 @@ export function useData() {
     async function loadData() {
       try {
         const [waterBodiesData, speciesData, seasonsData, techniquesData] = await Promise.all([
-          fetch('/fish_agents/data/water-bodies.json').then(r => r.json()),
-          fetch('/fish_agents/data/species.json').then(r => r.json()),
-          fetch('/fish_agents/data/seasons.json').then(r => r.json()),
-          fetch('/fish_agents/data/techniques.json').then(r => r.json())
+          fetch('/data/water-bodies.json').then(r => r.json()),
+          fetch('/data/species.json').then(r => r.json()),
+          fetch('/data/seasons.json').then(r => r.json()),
+          fetch('/data/techniques.json').then(r => r.json())
         ])
 
         setWaterBodies(waterBodiesData)

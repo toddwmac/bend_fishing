@@ -124,7 +124,7 @@ Before you begin, ensure you have the following installed:
 
 4. **Open your browser**
    ```
-   http://localhost:3000/fish_agents/
+   http://localhost:3000/
    ```
 
 ### Available Scripts
@@ -139,7 +139,7 @@ Before you begin, ensure you have the following installed:
 
 ## Deployment to GitHub Pages
 
-This project uses manual deployment to GitHub Pages via the GitHub web interface.
+This project uses the `docs/` directory for GitHub Pages deployment.
 
 ### Step 1: Create GitHub Repository
 
@@ -176,66 +176,65 @@ git push -u origin main
 npm run build
 ```
 
-This creates a `dist/` folder with your built application.
+This creates a `docs/` folder with your built application.
 
-### Step 4: Deploy to GitHub Pages (Manual)
-
-#### Initial Deployment
+### Step 4: Configure GitHub Pages
 
 1. Go to your repository on GitHub
 2. Click **Settings** → **Pages** (left sidebar)
 3. Under **Build and deployment** → **Source**, select **Deploy from a branch**
-4. Under **Branch**, select **main** and **/(root)**
+4. Under **Branch**, select **main** and **/docs**
 5. Click **Save**
 
-6. **Upload your built files to the repository root:**
-   - Go to your repository's **Code** tab
-   - Click the **Add file** → **Upload files** button
-   - Navigate to your local `dist/` folder
-   - **Upload all files from the dist folder** (including `index.html`, `assets/` folder, etc.)
-   - **IMPORTANT**: Upload these files directly to the repository root (the same level as package.json, src/, etc.)
-   - Scroll to the bottom and commit with message: "Deploy to GitHub Pages"
+### Step 5: Deploy
 
-7. Wait 1-2 minutes for GitHub to deploy
-8. Your site will be live at: `https://YOUR-USERNAME.github.io/fish_agents/`
+After building your project:
 
-#### Updating Your Site
+1. **Commit and push the `docs/` directory:**
+   ```bash
+   git add docs/
+   git commit -m "Deploy to GitHub Pages"
+   git push
+   ```
+
+2. Wait 1-2 minutes for GitHub to deploy
+3. Your site will be live at: `https://YOUR-USERNAME.github.io/fish_agents/`
+
+### Updating Your Site
 
 After making changes:
 
 ```bash
-# 1. Commit and push source code
+# 1. Commit and push source code changes
 git add .
 git commit -m "Your commit message"
 git push
 
-# 2. Rebuild the project
+# 2. Build the project
 npm run build
-```
 
-Then in GitHub web interface:
-1. Go to **Code** tab
-2. Click **Add file** → **Upload files**
-3. Upload all files from your local `dist/` folder to the repository root (this will overwrite previous files)
-4. Commit with message: "Update deployment"
+# 3. Commit and push the updated docs/ directory
+git add docs/
+git commit -m "Update deployment"
+git push
+```
 
 ### Troubleshooting Deployment
 
 | Issue | Solution |
 |-------|----------|
 | 404 Error | Wait 1-2 minutes for GitHub to deploy, or check Pages settings |
-| Blank Page | Verify `vite.config.ts` has correct `base: '/fish_agents/'` |
-| Styles Missing | Ensure all files from `dist/` are uploaded, including the `assets/` folder |
+| Blank Page | Ensure GitHub Pages is configured to serve from `/docs` folder |
+| Styles Missing | Verify all files in `docs/` folder are committed and pushed |
 | Old version showing | Clear browser cache or try incognito mode |
 
 ### Important Notes
 
-- Upload files to the **repository root** (same level as package.json, src/, public/, etc.)
-- Always upload **ALL files** from the `dist/` folder, including subdirectories
-- The `dist/` folder is created/overwritten each time you run `npm run build`
-- Do NOT edit files in the `dist/` folder - edit source files and rebuild
-- GitHub Pages serves from the root of your repository, not from a subdirectory
-- When uploading, you'll see existing files like package.json, src/, etc. - the new dist files will be added alongside them
+- The `docs/` folder is created/overwritten each time you run `npm run build`
+- Do NOT edit files in the `docs/` folder - edit source files and rebuild
+- GitHub Pages serves from the `docs/` folder in your repository
+- Always commit and push the `docs/` folder after building
+- The `docs/` folder is tracked in git and will be included in your repository
 
 ---
 
