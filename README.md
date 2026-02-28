@@ -48,10 +48,11 @@ The Bend Fishing Guide is a **static-site web application** designed to help ang
 ### 🗺️ Water Body Browser
 Explore fishing locations with detailed information including:
 - **8 Major Water Bodies**: Deschutes River, Cascade Lakes, Crane Prairie, Wickiup, Metolius, Crooked River, Fall River, Tumalo Creek
-- **Access Points**: Bank fishing, boat ramps, and trailhead locations
+- **Access Points**: Bank fishing, boat ramps, and trailhead locations with map links
 - **Fishing Regulations**: Location-specific rules and restrictions
 - **Species Present**: Which fish can be found where
 - **Best Seasons**: Optimal fishing times for each location
+- **External Resources**: Links to ODFW regulations, fishing reports, maps, and weather
 
 ### 🐟 Species Guide
 Comprehensive information on **11 Fish Species**:
