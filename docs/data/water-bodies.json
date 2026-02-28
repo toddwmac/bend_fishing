@@ -38,9 +38,31 @@
         "type": "trailhead"
       }
     ],
-    "regulations": "No fishing from floating devices on the Deschutes River - wade fishing only. Always check ODFW regulations for current catch limits and seasons.",
+    "regulations": "No fishing from floating devices on Deschutes River - wade fishing only. Always check ODFW regulations for current catch limits and seasons.",
     "bestSeasons": ["May", "June", "July", "August"],
-    "techniques": ["fly-fishing", "lure", "bait"]
+    "techniques": ["fly-fishing", "lure", "bait"],
+    "externalLinks": [
+      {
+        "name": "ODFW Regulations",
+        "url": "https://myodfw.com/fishing/regulations",
+        "type": "regulations"
+      },
+      {
+        "name": "Current Fishing Report",
+        "url": "https://myodfw.com/fishing/report",
+        "type": "report"
+      },
+      {
+        "name": "Google Maps - Deschutes River",
+        "url": "https://www.google.com/maps/search?q=Deschutes+River+Bend+Oregon",
+        "type": "map"
+      },
+      {
+        "name": "NOAA Weather - Bend, OR",
+        "url": "https://www.weather.gov/weather.php?lat=44.05&lon=-121.31",
+        "type": "weather"
+      }
+    ]
   },
   {
     "id": "crane-prairie-reservoir",
@@ -72,7 +94,29 @@
     ],
     "regulations": "Standard Oregon fishing regulations apply. Boat fishing allowed. Check ODFW for trout size limits.",
     "bestSeasons": ["May", "June", "July", "August", "September"],
-    "techniques": ["fly-fishing", "lure", "bait", "trolling"]
+    "techniques": ["fly-fishing", "lure", "bait", "trolling"],
+    "externalLinks": [
+      {
+        "name": "ODFW Regulations",
+        "url": "https://myodfw.com/fishing/regulations",
+        "type": "regulations"
+      },
+      {
+        "name": "Current Fishing Report",
+        "url": "https://myodfw.com/fishing/report",
+        "type": "report"
+      },
+      {
+        "name": "Google Maps - Crane Prairie Reservoir",
+        "url": "https://www.google.com/maps/search?q=Crane+Prairie+Reservoir+Oregon",
+        "type": "map"
+      },
+      {
+        "name": "NOAA Weather - Bend, OR",
+        "url": "https://www.weather.gov/weather.php?lat=43.9&lon=-121.7",
+        "type": "weather"
+      }
+    ]
   },
   {
     "id": "wickiup-reservoir",
@@ -99,7 +143,29 @@
     ],
     "regulations": "Kokanee limit is 5 per day. Check ODFW for current regulations on trout limits.",
     "bestSeasons": ["May", "June", "July", "August", "September"],
-    "techniques": ["lure", "trolling", "bait"]
+    "techniques": ["lure", "trolling", "bait"],
+    "externalLinks": [
+      {
+        "name": "ODFW Regulations",
+        "url": "https://myodfw.com/fishing/regulations",
+        "type": "regulations"
+      },
+      {
+        "name": "Current Fishing Report",
+        "url": "https://myodfw.com/fishing/report",
+        "type": "report"
+      },
+      {
+        "name": "Google Maps - Wickiup Reservoir",
+        "url": "https://www.google.com/maps/search?q=Wickiup+Reservoir+Oregon",
+        "type": "map"
+      },
+      {
+        "name": "NOAA Weather - Bend, OR",
+        "url": "https://www.weather.gov/weather.php?lat=43.8&lon=-121.6",
+        "type": "weather"
+      }
+    ]
   },
   {
     "id": "metolius-river",
@@ -126,13 +192,35 @@
     ],
     "regulations": "Bull trout are protected - catch and release only. Fly fishing only in some sections. Check ODFW regulations for specific section rules.",
     "bestSeasons": ["April", "May", "June", "October"],
-    "techniques": ["fly-fishing"]
+    "techniques": ["fly-fishing"],
+    "externalLinks": [
+      {
+        "name": "ODFW Regulations",
+        "url": "https://myodfw.com/fishing/regulations",
+        "type": "regulations"
+      },
+      {
+        "name": "Current Fishing Report",
+        "url": "https://myodfw.com/fishing/report",
+        "type": "report"
+      },
+      {
+        "name": "Google Maps - Metolius River",
+        "url": "https://www.google.com/maps/search?q=Metolius+River+Oregon",
+        "type": "map"
+      },
+      {
+        "name": "NOAA Weather - Bend, OR",
+        "url": "https://www.weather.gov/weather.php?lat=44.4&lon=-121.6",
+        "type": "weather"
+      }
+    ]
   },
   {
     "id": "crooked-river",
     "name": "Crooked River",
     "type": "river",
-    "description": "The Crooked River below Bowman Dam is a excellent tailwater fishery with abundant redband rainbow trout and mountain whitefish. The river canyon provides spectacular scenery.",
+    "description": "The Crooked River below Bowman Dam is an excellent tailwater fishery with abundant redband rainbow trout and mountain whitefish. The river canyon provides spectacular scenery.",
     "species": ["rainbow-trout", "whitefish"],
     "accessPoints": [
       {
@@ -158,7 +246,29 @@
     ],
     "regulations": "Trout limit is 5 per day, with only 1 over 20 inches. Artificial flies and lures only in some sections. Check ODFW regulations.",
     "bestSeasons": ["April", "May", "June", "September", "October"],
-    "techniques": ["fly-fishing", "lure"]
+    "techniques": ["fly-fishing", "lure"],
+    "externalLinks": [
+      {
+        "name": "ODFW Regulations",
+        "url": "https://myodfw.com/fishing/regulations",
+        "type": "regulations"
+      },
+      {
+        "name": "Current Fishing Report",
+        "url": "https://myodfw.com/fishing/report",
+        "type": "report"
+      },
+      {
+        "name": "Google Maps - Crooked River",
+        "url": "https://www.google.com/maps/search?q=Crooked+River+Oregon",
+        "type": "map"
+      },
+      {
+        "name": "NOAA Weather - Bend, OR",
+        "url": "https://www.weather.gov/weather.php?lat=44.2&lon=-121.0",
+        "type": "weather"
+      }
+    ]
   },
   {
     "id": "cascade-lakes",
@@ -205,7 +315,29 @@
     ],
     "regulations": "Regulations vary by lake. Hosmer Lake is fly fishing only. Check ODFW for lake-specific regulations.",
     "bestSeasons": ["June", "July", "August", "September"],
-    "techniques": ["fly-fishing", "lure", "bait", "trolling"]
+    "techniques": ["fly-fishing", "lure", "bait", "trolling"],
+    "externalLinks": [
+      {
+        "name": "ODFW Regulations",
+        "url": "https://myodfw.com/fishing/regulations",
+        "type": "regulations"
+      },
+      {
+        "name": "Current Fishing Report",
+        "url": "https://myodfw.com/fishing/report",
+        "type": "report"
+      },
+      {
+        "name": "Google Maps - Cascade Lakes",
+        "url": "https://www.google.com/maps/search?q=Cascade+Lakes+Oregon",
+        "type": "map"
+      },
+      {
+        "name": "NOAA Weather - Bend, OR",
+        "url": "https://www.weather.gov/weather.php?lat=44.0&lon=-121.6",
+        "type": "weather"
+      }
+    ]
   },
   {
     "id": "fall-river",
@@ -232,7 +364,29 @@
     ],
     "regulations": "Fly fishing only. Catch and release encouraged. Check ODFW for current regulations.",
     "bestSeasons": ["May", "June", "July", "August", "September"],
-    "techniques": ["fly-fishing"]
+    "techniques": ["fly-fishing"],
+    "externalLinks": [
+      {
+        "name": "ODFW Regulations",
+        "url": "https://myodfw.com/fishing/regulations",
+        "type": "regulations"
+      },
+      {
+        "name": "Current Fishing Report",
+        "url": "https://myodfw.com/fishing/report",
+        "type": "report"
+      },
+      {
+        "name": "Google Maps - Fall River",
+        "url": "https://www.google.com/maps/search?q=Fall+River+Oregon",
+        "type": "map"
+      },
+      {
+        "name": "NOAA Weather - Bend, OR",
+        "url": "https://www.weather.gov/weather.php?lat=44.0&lon=-121.6",
+        "type": "weather"
+      }
+    ]
   },
   {
     "id": "tumalo-creek",
@@ -254,6 +408,28 @@
     ],
     "regulations": "Check ODFW for creek-specific regulations. Some sections may be closed to protect spawning fish.",
     "bestSeasons": ["April", "May", "June"],
-    "techniques": ["fly-fishing", "lure"]
+    "techniques": ["fly-fishing", "lure"],
+    "externalLinks": [
+      {
+        "name": "ODFW Regulations",
+        "url": "https://myodfw.com/fishing/regulations",
+        "type": "regulations"
+      },
+      {
+        "name": "Current Fishing Report",
+        "url": "https://myodfw.com/fishing/report",
+        "type": "report"
+      },
+      {
+        "name": "Google Maps - Tumalo Creek",
+        "url": "https://www.google.com/maps/search?q=Tumalo+Creek+Bend+Oregon",
+        "type": "map"
+      },
+      {
+        "name": "NOAA Weather - Bend, OR",
+        "url": "https://www.weather.gov/weather.php?lat=44.0&lon=-121.6",
+        "type": "weather"
+      }
+    ]
   }
 ]

@@ -14,25 +14,25 @@ export default function Home() {
       </div>
 
       <div className="grid">
-        <Link to="/bend_fishing/water-bodies" className="card card-link">
+        <Link to="/bend_fishing/water-bodies" className="card">
           <div className="card-icon">🗺️</div>
           <h3>Water Bodies</h3>
           <p>Explore fishing locations including the Deschutes River, Cascade Lakes, and more.</p>
         </Link>
 
-        <Link to="/bend_fishing/species" className="card card-link">
+        <Link to="/bend_fishing/species" className="card">
           <div className="card-icon">🐟</div>
           <h3>Species Guide</h3>
           <p>Learn about trout, salmon, bass and other fish species found in Central Oregon.</p>
         </Link>
 
-        <Link to="/bend_fishing/seasons" className="card card-link">
+        <Link to="/bend_fishing/seasons" className="card">
           <div className="card-icon">📅</div>
           <h3>Seasonal Calendar</h3>
           <p>Find the best times to fish, insect hatches, and seasonal fishing patterns.</p>
         </Link>
 
-        <Link to="/bend_fishing/planner" className="card card-link">
+        <Link to="/bend_fishing/planner" className="card">
           <div className="card-icon">🎣</div>
           <h3>Trip Planner</h3>
           <p>Plan your fishing trip and save your favorite locations and species.</p>
@@ -63,10 +63,7 @@ export default function Home() {
           line-height: 1.75;
         }
 
-        .card-link {
-          text-decoration: none;
-          color: inherit;
-          display: block;
+        .card {
           cursor: pointer;
         }
 
@@ -75,12 +72,12 @@ export default function Home() {
           margin-bottom: 0.5rem;
         }
 
-        .card-link h3 {
+        .card h3 {
           color: var(--color-primary);
           margin-bottom: 0.5rem;
         }
 
-        .card-link:hover h3 {
+        .card:hover h3 {
           color: var(--color-primary-dark);
         }
 
