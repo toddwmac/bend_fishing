@@ -28,7 +28,7 @@ export default function WaterBodies() {
   }
 
   const getMapUrl = (bodyName: string) => {
-    return `https://www.google.com/maps/search?q=${encodeURIComponent(bodyName + ' Bend Oregon')}`
+    return `https://www.google.com/maps/place/${encodeURIComponent(bodyName).replace(/%20/g, '+')}/`
   }
 
   if (loading) return <div className="loading">Loading...</div>
@@ -71,7 +71,7 @@ export default function WaterBodies() {
                       <strong>{ap.name}</strong> ({ap.type.replace('_', ' ')}) - {ap.description}
                     </div>
                     <a
-                      href={`https://www.google.com/maps/search?q=${encodeURIComponent(ap.name + ' ' + selectedBody.name)}`}
+                      href={`https://www.google.com/maps/place/${encodeURIComponent(ap.name).replace(/%20/g, '+')}+${encodeURIComponent(selectedBody.name).replace(/%20/g, '+')}/`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="access-point-map"
